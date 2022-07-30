@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box; 
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav a:hover {
+    background-color: #eb0000;
+	border-radius: 10px;
+}
+.profile header {
+    text-align: center;
+}
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.profile img {
+    width: 200px;
+}
+.jumbotron {
+    padding: 10px;
+    background-color: #eb0000;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+header {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 50px;
+}
+nav {
+    background-color: #c60000;
+    padding: 3px;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: 0.2s;
+}
+main{
+	overflow: auto;
+}
+#beranda{
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+.judul {
+    border-bottom: solid;
+    display: inline;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+#beranda section{
+    display: flex;
+    align-items: center;
+}
+.paraf{
+    line-height: 25px;
+    margin: auto;
+    font-size: 20px;
+    width: 530px;
+}
+.button-pesan a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 100px;
+    color: white;
+    background-color: #eb0000;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+section a:hover{
+    background-color: #c60000;
+}
+.container-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+h2 {
+    margin: 30px 0 20px 0;
+}
+.makanan{
+    background-color: white;
+	flex-basis: 24%;
+	text-align: center;
+	transition: 0.3s;
+    padding-bottom: 20px;
+}
+.makanan img{
+	padding: 20px;
+	width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.container{
+    padding: 60px;
+    text-align: center;
+    background-color: #eee;
+}
+h3, h4 {
+    margin: 0;
+    margin: 10px;
+}
+.button-cart {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 100px;
+    color: white;
+    background-color: #eb0000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+.button-cart:hover{
+    background-color: #c60000;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.button:hover {
+    font-weight: bold;
+}
+.history {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th, td {
+   text-align: center;
+   padding: 16px;
+}
+th {
+    background-color: #eb0000;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+td img {
+    width: 30%;
+    height: 100px;
+}
+#hapus{
+	text-align: right;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#hapus:hover{
+	color: #eb0000;
+}
+aside {
+    background-color: #eee;
+}
+.biodata {
+    box-shadow: 0px 0px 10px black;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #eb0000;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.biodata section {
+    text-align: left;
+}
+.biodata img {
+    width: 200px;
+    border-radius: 50%;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #c60000;
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width: 800px){
+	nav a{ 
+		padding: 0;
+        margin: 0;
+	}
+    nav li {
+        margin-right: 5px;
+    }
+    #beranda section {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .paraf {
+        width: 100%;
+    }
+    #beranda img {
+        width: 100%;
+        display: block;
+    } 
+
+    .makanan {
+        flex-basis: 100%;
+    }
+    #content {
+        padding: 10px;
+    }
+    .biodata {
+        width: 100%;
+    }
+    aside {
+        padding: 10px;
+    }
+}

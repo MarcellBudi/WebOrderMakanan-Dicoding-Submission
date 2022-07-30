@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Makanan</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Ayam Geprek</h1>
+            <p>Silahkan pesan sesuai keinginan anda</p>
+            <p>Enjoy Your Meal</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#pesan">Pesanan</a></li>
+                <li><a href="#biodata">Biodata</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="beranda">
+            <section>
+                <img src="assets/images/background-ayam.jpg" alt="ayam-geprek">
+                <div class="paraf">
+                    <h1 class="judul">Apa itu Ayam Geprek?</h1>
+                    <p>Ayam Geprek merupakan makanan ayam goreng tepung yang digeprek menggunakan ulekan bersama sambal. Terdapat berbagai macam menu ayam geprek, kulit crispy, dan ceker crispy. Dan terdapat juga menu minuman pop ice, es teh, aqua dan nutrisari </p>
+                    <div class="button-pesan">
+                        <a href="#menu">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="content" class="container">
+            <article id="menu">
+                <h1 class="judul">Menu</h1>
+                <h2>Makanan</h2>
+                <div class="container-row">
+                    <div class="makanan">
+                        <img src="assets/images/ayam-geprek.jpg" alt="ayam geprek">
+                        <h3>Ayam Geprek</h3>
+                        <h4>Rp. 8000</h4>
+                        <button class="button-cart">Add To Cart</button>
+                    </div>
+                    <div class="makanan">
+                        <img src="assets/images/kulit.jpeg" alt="kulit">
+                        <h3>Kulit Crispy</h3>
+                        <h4>Rp. 5000</h4>
+                        <button class="button-cart">Add To Cart</button>
+                    </div>
+                    <div class="makanan">
+                        <img src="assets/images/ceker.jpeg" alt="ceker">
+                        <h3>Ceker Crispy</h3>
+                        <h4>Rp. 5000</h4>
+                        <button class="button-cart">Add To Cart</button>
+                    </div>
+                    <div class="makanan">
+                        <img src="assets/images/sosis-goreng.jpg" alt="sosis-goreng">
+                        <h3>Sosis Goreng</h3>
+                        <h4>Rp. 6000</h4>
+                        <button class="button-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <h2>Minuman</h2>
+                <div class="container-row">
+                    <div class="makanan">
+                        <img src="assets/images/pop-ice.jpeg" alt="pop ice">
+                        <h3>Pop Es</h3>
+                        <h4>Rp. 4000</h4>
+                        <button class="button-cart">Add To Cart</button>
+                    </div>
+                    <div class="makanan">
+                        <img src="assets/images/es-teh.jpg" alt="es teh">
+                        <h3>Es Teh</h3>
+                        <h4>Rp. 3000</h4>
+                        <button class="button-cart">Add To Cart</button>
+                    </div>
+                    <div class="makanan">
+                        <img src="assets/images/aqua.jpg" alt="aqua">
+                        <h3>Aqua</h3>
+                        <h4>Rp. 3000</h4>
+                        <button class="button-cart">Add To Cart</button>
+                    </div>
+                    <div class="makanan">
+                        <img src="assets/images/nutrisari.jpg" alt="nutrisari">
+                        <h3>Nutrisari</h3>
+                        <h4>Rp. 3000</h4>
+                        <button class="button-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="history card" id="pesan">
+            <h2>Keranjang Anda</h2>
+             <table>
+                 <thead>
+                     <tr>
+                        <th>Gambar Pesanan</th>
+                         <th>Nama Pesanan</th>
+                         <th>Harga Barang</th>
+                     </tr>
+                 </thead>
+                 <tbody id="historyList"></tbody>
+             </table>
+             <h4 id="hapus">Hapus Semua Pesanan</h4>
+        </div>
+
+        <aside>
+            <article  class="biodata" id="biodata">
+                <header>
+                    <h2>Biodata</h2>
+                        <figure>
+                            <img src="assets/images/gambar-saya.jpeg" alt="Gambar Marcell">
+                        </figure>
+                </header>
+                <section>
+                    <h3>Nama</h3>
+                    <p>Marcell Budi Putra</p>
+                    <h3>Umur</h3>
+                    <p>20 tahun</p>
+                    <h3>Alamat </h3>
+                    <p>Perumahan Serongga Permai blok B no.11 Gianyar Bali</p>
+                    <h3>No. Telepon</h3>
+                    <p>089682233043</p>
+                    <h3>Email</h3>
+                    <p>marcellbudiputra@gmail.com</p> 
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2022, All rights reserved. Created by Marcell Budi</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/storage.js"></script>
+
+</body>
+</html>
